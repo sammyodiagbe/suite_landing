@@ -1,6 +1,10 @@
 import phoneImage from "../assets/mobile_image.svg";
+import pathImage from "../assets/path_image.svg";
+import manImage from "../assets/man_image.svg";
 
 const Home = () => {
+  const dateYear = new Date().getFullYear();
+
   return (
     <div className="home">
       <nav className="Navigation">
@@ -36,6 +40,25 @@ const Home = () => {
           </div>
         </section>
       </header>
+      <div className="cmo-speaks">
+        <img src={manImage} alt="CMO speaks" />
+        <img src={pathImage} alt="Path arrow" />
+        <div className="words-container">
+          <h1 className="header-title">It just works.</h1>
+          <p className="subtitle"></p>
+
+          <div className="name-position">
+            <h3 className="name">jeremy Robinson</h3>
+            <h4 className="sub">Cmo Fylo</h4>
+          </div>
+
+          <p></p>
+        </div>
+      </div>
+      <footer className="footer">
+        <h1 className="brand">Suite</h1>
+        <p>&copy;Copyright {dateYear}</p>
+      </footer>
     </div>
   );
 };
