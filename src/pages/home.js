@@ -7,23 +7,27 @@ const Home = () => {
 
   return (
     <div className="home">
-      <nav className="Navigation">
-        <h1 className="heading_title">Suite</h1>
-        <a href="#request_beta">Request Beta Access</a>
+      <nav className="navigation">
+        <h2 className="brand">Suite</h2>
+        <a href="#request_beta" className="request-beta">
+          Request Beta Access
+        </a>
       </nav>
       <header className="header-container">
         <section class="action-container">
-          <h1 className="header-text">A super solution for your business.</h1>
+          <h1 className="header-text">
+            A <b>super solution</b> for your <b>business.</b>{" "}
+          </h1>
           <p className="description-text">
             Our marketing and sales automation help you scale your outreach to
             get more deals for your company.
           </p>
-          <a href="#request-beta" class="request-beta">
+          <a href="#request-beta" className="request-beta">
             Request Beta Access
           </a>
         </section>
         <section className="image-container">
-          <img src={phoneImage} alt="Mobile app" />
+          <img src={phoneImage} alt="Mobile app" className="phone-image" />
         </section>
         <section className="reviews-container">
           <div className="review">

@@ -1,3 +1,18 @@
+$darkblack: hsl(219,43,16);
+$lighterdark: hsl(218,20,36);
+$greyish: hsl(30,33,93);
+$smokewhite: hsl(30,29,97);
+$purpuish: hsl(264, 100, 69);
+$funchia: hsl(292, 76, 54);
+$orangeL: hsl(31, 100, 65);
+$button-border-radius: 6px;
+$mobile-font-size: 16px;
+$default-padding: 1em;
+$strong-weight: 700;
+$light-weight: 300;
+$light-weight-2:400;
+$mobile-large-font: 38px;
+$mobile-line-space: 48px;
 @import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
 
 * {
@@ -12,4 +27,66 @@
 body {
     font-family: 'Epilogue', sans-serif;
     font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+
+    &.request-beta {
+        padding: $default-padding;
+        
+        display: inline-block;
+        font-weight: 600;
+        border-radius: $button-border-radius;
+    }
+}
+
+nav.navigation {
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+    a.request-beta {
+        color: $darkblack;
+        border:1px solid $lighterdark;
+        font-size: $mobile-font-size;
+    }
+}
+
+section.action-container {
+    padding: 2em $default-padding;
+    
+    h1.header-text {
+        font-weight: $light-weight;
+        font-size: $mobile-large-font;
+        line-height: $mobile-line-space;
+        b {
+            font-weight: 900;
+        }
+
+        
+    }
+
+    p.description-text {
+        margin: 2em 0;
+        color: $lighterdark;
+        line-height: 32px;
+    }
+
+    a.request-beta {
+        background: $darkblack;
+        color: $smokewhite;
+        font-size: $mobile-font-size;
+        padding: $default-padding 2em;
+        font-weight: $light-weight-2;
+        margin-bottom: 2em;
+    }
+}
+
+section.image-container {
+    padding: $default-padding;
+    img.phone-image {
+        width: 100%;
+        max-width: 100%;
+    }
 }

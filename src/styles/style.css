@@ -13,4 +13,72 @@ body {
   font-family: 'Epilogue', sans-serif;
   font-size: 18px;
 }
+
+a {
+  text-decoration: none;
+}
+
+a.request-beta {
+  padding: 1em;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+nav.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav.navigation a.request-beta {
+  color: #17243a;
+  border: 1px solid #49576e;
+  font-size: 16px;
+}
+
+section.action-container {
+  padding: 2em 1em;
+}
+
+section.action-container h1.header-text {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+section.action-container h1.header-text b {
+  font-weight: 900;
+}
+
+section.action-container p.description-text {
+  margin: 2em 0;
+  color: #49576e;
+  line-height: 32px;
+}
+
+section.action-container a.request-beta {
+  background: #17243a;
+  color: #faf7f5;
+  font-size: 16px;
+  padding: 1em 2em;
+  font-weight: 400;
+  margin-bottom: 2em;
+}
+
+section.image-container {
+  padding: 1em;
+}
+
+section.image-container img.phone-image {
+  width: 100%;
+  max-width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
