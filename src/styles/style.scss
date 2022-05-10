@@ -46,6 +46,9 @@ nav.navigation {
     padding: 1em;
     justify-content: space-between;
     align-items: center;
+    h1.title {
+        font-weight: bolder;
+    }
     a.request-beta {
         color: $darkblack;
         border:1px solid $lighterdark;
@@ -89,4 +92,78 @@ section.image-container {
         width: 100%;
         max-width: 100%;
     }
+}
+
+section.reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5em $default-padding;
+    padding-bottom: 200px;
+    h1.review-title {
+        font-size: 48px;
+        letter-spacing: 1px;
+    }
+    h5.review-sub-title {
+        color: $lighterdark;
+        padding-bottom: 2em;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        line-height: 26px;
+
+    }
+}
+
+div.cmo-speaks {
+    background: $darkblack;
+    color: $smokewhite;
+    border-radius: 16px;
+    padding: $default-padding;
+    position: relative;
+    padding-top: 250px;
+    img.arrow {
+        display: block;
+        margin: 0 auto;
+    }
+
+    img.cmo {
+        position: absolute;
+        top: -180px;
+    }
+    div.words-container {
+        text-align: center;
+
+        h1.header-title {
+            padding: 1em 0;
+            font-weight: $light-weight-2;
+        }
+
+        p.subtitle {
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: 0;
+            margin-bottom: 1em;
+        }
+        div.name-position {
+            text-transform: uppercase;
+
+            .name {
+                font-weight: bolder;
+                padding: 1em 0;
+            }
+            .sub {
+                font-weight: 200;
+            }
+        }
+    }
+}
+footer.footer {
+    padding: 2.5em $default-padding;
+    background: $smokewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 200px;
 }

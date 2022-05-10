@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="home">
       <nav className="navigation">
-        <h2 className="brand">Suite</h2>
+        <h1 className="brand">suite</h1>
         <a href="#request_beta" className="request-beta">
           Request Beta Access
         </a>
@@ -32,35 +32,41 @@ const Home = () => {
         <section className="reviews-container">
           <div className="review">
             <h1 className="review-title">2K+</h1>
-            <h3 className="review-sub-title">Companies</h3>
+            <h5 className="review-sub-title">Companies</h5>
           </div>
           <div className="review">
             <h1 className="review-title">8</h1>
-            <h3 className="review-sub-title">Languages</h3>
+            <h5 className="review-sub-title">Languages</h5>
           </div>
           <div className="review">
             <h1 className="review-title">1.2M</h1>
-            <h3 className="review-sub-title">Leads</h3>
+            <h5 className="review-sub-title">Leads</h5>
           </div>
         </section>
       </header>
       <div className="cmo-speaks">
-        <img src={manImage} alt="CMO speaks" />
-        <img src={pathImage} alt="Path arrow" />
+        <img src={manImage} alt="CMO speaks" className="cmo" />
+        <img src={pathImage} alt="Path arrow" className="arrow" />
         <div className="words-container">
-          <h1 className="header-title">It just works.</h1>
-          <p className="subtitle"></p>
+          <h1 className="header-title">
+            It just <b>works.</b>
+          </h1>
+          <p className="subtitle">
+            "I really like how it is an all-in-one solution that can handle many
+            of the tasks that you would normally need seperate tools to do the
+            same job. This thing is a miracle worker."
+          </p>
 
           <div className="name-position">
             <h3 className="name">jeremy Robinson</h3>
-            <h4 className="sub">Cmo Fylo</h4>
+            <h4 className="sub">Cmo, Fylo</h4>
           </div>
 
           <p></p>
         </div>
       </div>
       <footer className="footer">
-        <h1 className="brand">Suite</h1>
+        <h2 className="brand">suite</h2>
         <p>&copy;Copyright {dateYear}</p>
       </footer>
     </div>

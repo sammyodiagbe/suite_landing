@@ -38,6 +38,10 @@ nav.navigation {
           align-items: center;
 }
 
+nav.navigation h1.title {
+  font-weight: bolder;
+}
+
 nav.navigation a.request-beta {
   color: #17243a;
   border: 1px solid #49576e;
@@ -80,5 +84,101 @@ section.image-container {
 section.image-container img.phone-image {
   width: 100%;
   max-width: 100%;
+}
+
+section.reviews-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 5em 1em;
+  padding-bottom: 200px;
+}
+
+section.reviews-container h1.review-title {
+  font-size: 48px;
+  letter-spacing: 1px;
+}
+
+section.reviews-container h5.review-sub-title {
+  color: #49576e;
+  padding-bottom: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  line-height: 26px;
+}
+
+div.cmo-speaks {
+  background: #17243a;
+  color: #faf7f5;
+  border-radius: 16px;
+  padding: 1em;
+  position: relative;
+  padding-top: 250px;
+}
+
+div.cmo-speaks img.arrow {
+  display: block;
+  margin: 0 auto;
+}
+
+div.cmo-speaks img.cmo {
+  position: absolute;
+  top: -180px;
+}
+
+div.cmo-speaks div.words-container {
+  text-align: center;
+}
+
+div.cmo-speaks div.words-container h1.header-title {
+  padding: 1em 0;
+  font-weight: 400;
+}
+
+div.cmo-speaks div.words-container p.subtitle {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0;
+  margin-bottom: 1em;
+}
+
+div.cmo-speaks div.words-container div.name-position {
+  text-transform: uppercase;
+}
+
+div.cmo-speaks div.words-container div.name-position .name {
+  font-weight: bolder;
+  padding: 1em 0;
+}
+
+div.cmo-speaks div.words-container div.name-position .sub {
+  font-weight: 200;
+}
+
+footer.footer {
+  padding: 2.5em 1em;
+  background: #faf7f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 200px;
 }
 /*# sourceMappingURL=style.css.map */
