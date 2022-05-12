@@ -1,6 +1,6 @@
 $darkblack: hsl(219,43,16);
 $lighterdark: hsl(218,20,36);
-$greyish: hsl(30,33,93);
+$greyish_background: hsl(30,33,93);
 $smokewhite: hsl(30,29,97);
 $purpuish: hsl(264, 100, 69);
 $funchia: hsl(292, 76, 54);
@@ -27,7 +27,7 @@ $mobile-line-space: 48px;
 body {
     font-family: 'Epilogue', sans-serif;
     font-size: 18px;
-    background: $smokewhite;
+    background: $greyish_background;
 }
 
 a {
@@ -59,6 +59,12 @@ nav.navigation {
 
 section.action-container {
     padding: 2em $default-padding;
+    position: relative;
+    div.arrow-container {
+        display: flex;
+        justify-content: flex-end;
+        
+    }
     
     h1.header-text {
         font-weight: $light-weight;
@@ -161,10 +167,16 @@ div.cmo-speaks {
 }
 footer.footer {
     padding: 2.5em $default-padding;
-    background: $smokewhite;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-height: 200px;
+    min-height: 300px;
+    
+    div.socials {
+        a {
+            display: inline-block;
+            padding: 0 1em;
+        }
+    }
 }

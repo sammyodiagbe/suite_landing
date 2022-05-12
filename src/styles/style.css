@@ -12,7 +12,7 @@
 body {
   font-family: 'Epilogue', sans-serif;
   font-size: 18px;
-  background: #faf7f5;
+  background: #f3ede7;
 }
 
 a {
@@ -51,6 +51,16 @@ nav.navigation a.request-beta {
 
 section.action-container {
   padding: 2em 1em;
+  position: relative;
+}
+
+section.action-container div.arrow-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 section.action-container h1.header-text {
@@ -166,7 +176,6 @@ div.cmo-speaks div.words-container div.name-position .sub {
 
 footer.footer {
   padding: 2.5em 1em;
-  background: #faf7f5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,6 +189,11 @@ footer.footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 200px;
+  min-height: 300px;
+}
+
+footer.footer div.socials a {
+  display: inline-block;
+  padding: 0 1em;
 }
 /*# sourceMappingURL=style.css.map */

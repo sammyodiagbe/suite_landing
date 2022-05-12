@@ -1,7 +1,10 @@
 import phoneImage from "../assets/mobile_image.svg";
 import pathImage from "../assets/path_image.svg";
 import manImage from "../assets/man_image.svg";
-
+import facebook from "../assets/facebook_social.svg";
+import instagram from "../assets/instagram_social.svg";
+import twitter from "../assets/twitter_social.svg";
+import pt_1 from "../assets/pt_1.svg";
 const Home = () => {
   const dateYear = new Date().getFullYear();
 
@@ -15,6 +18,10 @@ const Home = () => {
       </nav>
       <header className="header-container">
         <section class="action-container">
+          <div className="arrow-container">
+            <img src={pt_1} alt="arrow path" className="ar-path-1" />
+          </div>
+
           <h1 className="header-text">
             A <b>super solution</b> for your <b>business.</b>{" "}
           </h1>
@@ -67,7 +74,18 @@ const Home = () => {
       </div>
       <footer className="footer">
         <h2 className="brand">suite</h2>
-        <p>&copy;Copyright {dateYear}</p>
+        <p>&copy;Copyright - Suite</p>
+        <div className="socials">
+          <a href="https://facebook.com">
+            <img src={facebook} alt="reachout on facebook" />
+          </a>
+          <a href="https://twitter.com">
+            <img src={twitter} alt="reachout on twitter" />
+          </a>
+          <a href="https://instagram.com">
+            <img src={instagram} alt="reaachout on instagram" />
+          </a>
+        </div>
       </footer>
     </div>
   );
