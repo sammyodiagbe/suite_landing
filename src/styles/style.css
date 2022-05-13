@@ -298,4 +298,107 @@ div.home footer.footer div.socials {
     margin-right: 0;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  div.home {
+    width: 1110px;
+    margin: 0 auto;
+  }
+  div.home header.header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  div.home header.header-container div.top-container {
+    background: url(../assets/ipag_phone.svg);
+    background-repeat: no-repeat;
+    height: 600px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-position: top right;
+    background-size: contain;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 1em;
+  }
+  div.home header.header-container div.top-container section.action-container {
+    width: 80%;
+  }
+  div.home header.header-container div.top-container section.action-container h1.header-text {
+    font-size: 78px;
+    line-height: 78px;
+    letter-spacing: 0.78px;
+  }
+  div.home header.header-container div.top-container section.action-container p.description-text {
+    width: 400px;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.09px;
+  }
+  div.home header.header-container div.top-container section.image-container {
+    display: none;
+  }
+  div.home header.header-container section.reviews-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 285px;
+    padding-bottom: 1em;
+  }
+  div.home div.cmo-speaks {
+    padding: 1em;
+  }
+  div.home div.cmo-speaks div.wrapper {
+    padding: 2em 3em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 1fr 4fr;
+        grid-template-columns: 3fr 1fr 4fr;
+  }
+  div.home div.cmo-speaks div.wrapper div.cmo-container {
+    height: 100%;
+    margin-top: 0;
+  }
+  div.home div.cmo-speaks div.wrapper div.cmo-container img {
+    height: 100%;
+  }
+  div.home div.cmo-speaks div.wrapper div.words-container h1.header-title {
+    font-size: 40px;
+  }
+  div.home div.cmo-speaks div.wrapper div.words-container p.subtitle {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  div.home footer.footer {
+    min-height: auto;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 3em 1em;
+  }
+  div.home footer.footer h2.brand {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  div.home footer.footer div.socials a:nth-child(3) {
+    margin-right: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

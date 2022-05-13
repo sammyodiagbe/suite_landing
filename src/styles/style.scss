@@ -209,6 +209,8 @@ div.home {
     }
 }
 
+
+// ipad
 @media screen and (min-width: 768px){
     div.home {
         header.header-container {
@@ -295,4 +297,109 @@ div.home {
     }
 
     
+}
+
+// desktop
+
+@media screen and (min-width: 1440px) {
+    div.home {
+        width: 1110px;
+        margin: 0 auto;
+        header.header-container {
+            display: flex;
+
+
+            div.top-container {
+                background: url(../assets/ipag_phone.svg);
+                background-repeat: no-repeat;
+                height: 600px;
+                flex: 1;
+                background-position: top right;
+                background-size: contain;
+                display: flex;
+                align-items: center;
+                padding-bottom: $default-padding;
+                section.action-container {
+                    width: 80%;
+                    h1.header-text {
+                        font-size:  78px;
+                        line-height: 78px;
+                        letter-spacing: 0.78px;
+                    }
+
+                    p.description-text {
+                        width: 400px;
+                        font-size: 18px;
+                        line-height: 32px;
+                        letter-spacing: 0.09px;
+                    }
+                }
+                section.image-container {
+                    display: none;
+                }
+            }
+            section.reviews-container {
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width: 285px;
+                padding-bottom: $default-padding;
+                
+            }
+        }
+
+        div.cmo-speaks {
+            padding: $default-padding;
+            // div.wrapper {
+            //     position: static;
+            //     flex-direction: row;
+            //     align-items: center;
+            //     div.cmo-container {
+            //         position: static !important;
+            //         top: 0;
+            //     }
+            // } 
+            div.wrapper {
+                padding: 2em 3em;
+                display: grid;
+                grid-template-columns: 3fr 1fr 4fr;
+                div.cmo-container {
+                    height: 100%;
+                    margin-top: 0;
+                    img {
+                        height: 100%;
+                    }
+                }
+                div.words-container {
+                    h1.header-title {
+                        font-size: 40px;
+                    }
+                    p.subtitle {
+                        font-size: 18px;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+
+        footer.footer {
+            min-height: auto;
+            height: auto;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 3em $default-padding;
+            h2.brand {
+                font-size: 32px;
+                line-height: 32px;
+            }
+
+            div.socials {
+                a {
+                    &:nth-child(3) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
 }
