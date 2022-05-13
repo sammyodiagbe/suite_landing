@@ -63,6 +63,11 @@ div.home {
             color: $dark_blue;
             border: 1px solid $dark_blue;
             border-radius: $default-radius;
+            transition: all 300ms;
+            &:hover {
+                background: $dark_blue;
+                color: $smokewhite;
+            }
         }
     }
 
@@ -105,6 +110,10 @@ div.home {
                     display: inline-block;
                     background: $dark_blue;
                     color: $smokewhite;
+                    transition: all 300ms;
+                    &:hover {
+                        background: linear-gradient(to right,hsl(264, 100, 69), hsl(292,76,54), hsl(31,100,65));
+                    }
                 }
             }
 
@@ -157,6 +166,7 @@ div.home {
                 position: relative;
                 margin-top: -220px;
                 margin-bottom: 2em;
+                
             }
             div.words-container {
                 text-align: center;
@@ -362,12 +372,13 @@ div.home {
             div.wrapper {
                 padding: 2em 3em;
                 display: grid;
-                grid-template-columns: 3fr 1fr 4fr;
+                grid-template-columns: 4fr 1fr 4fr;
                 div.cmo-container {
                     height: 100%;
                     margin-top: 0;
                     img {
                         height: 100%;
+                        width: 500px;
                     }
                 }
                 div.words-container {
