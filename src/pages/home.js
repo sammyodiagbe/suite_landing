@@ -93,7 +93,7 @@ const Home = () => {
       </div>
       <footer className="footer">
         <h2 className="brand">suite</h2>
-        <p>&copy;Copyright - Suite</p>
+        <p>Copyright - Suite</p>
         <div className="socials">
           <a href="https://facebook.com">
             <img src={facebook} alt="reachout on facebook" />
