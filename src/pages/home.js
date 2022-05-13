@@ -11,15 +11,25 @@ const Home = () => {
 
   return (
     <div className="home">
+      {/* navigation */}
       <nav className="navigation">
         <h1 className="brand">suite</h1>
         <a href="#request_beta" className="request-beta">
           Request Beta Access
         </a>
       </nav>
+
+      {/* header */}
       <header className="header-container">
         <div className="top-container">
           <section class="action-container">
+            <div className="path-container">
+              <img
+                src={pt_1}
+                alt="path description"
+                style={{ display: "block" }}
+              />
+            </div>
             <h1 className="header-text">
               A <b>super solution</b> for your <b>business.</b>{" "}
             </h1>
@@ -33,8 +43,6 @@ const Home = () => {
           </section>
           <section className="image-container">
             <img src={phoneImage} alt="Mobile app" className="phone-image" />
-
-            <img src={ipadImage} alt="ipad phone" className="ipad-image" />
           </section>
         </div>
 
@@ -53,30 +61,34 @@ const Home = () => {
           </div>
         </section>
       </header>
+
+      {/* cmo speaks */}
       <div className="cmo-speaks">
-        <div className="cmo-container">
-          <img src={manImage} alt="CMO speaks" className="cmo" />
-        </div>
-        <div className="path-container">
-          <img src={pathImage} alt="Path arrow" className="arrow" />
-        </div>
-
-        <div className="words-container">
-          <h1 className="header-title">
-            It just <b>works.</b>
-          </h1>
-          <p className="subtitle">
-            "I really like how it is an all-in-one solution that can handle many
-            of the tasks that you would normally need seperate tools to do the
-            same job. This thing is a miracle worker."
-          </p>
-
-          <div className="name-position">
-            <h3 className="name">jeremy Robinson</h3>
-            <h4 className="sub">Cmo, Fylo</h4>
+        <div className="wrapper">
+          <div className="cmo-container">
+            <img src={manImage} alt="CMO speaks" className="cmo" />
+          </div>
+          <div className="path-container">
+            <img src={pathImage} alt="Path arrow" className="arrow" />
           </div>
 
-          <p></p>
+          <div className="words-container">
+            <h1 className="header-title">
+              It just <b>works.</b>
+            </h1>
+            <p className="subtitle">
+              "I really like how it is an all-in-one solution that can handle
+              many of the tasks that you would normally need seperate tools to
+              do the same job. This thing is a miracle worker."
+            </p>
+
+            <div className="name-position">
+              <h3 className="name">jeremy Robinson</h3>
+              <h4 className="sub">Cmo, Fylo</h4>
+            </div>
+
+            <p></p>
+          </div>
         </div>
       </div>
       <footer className="footer">

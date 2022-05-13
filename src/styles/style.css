@@ -1,1 +1,226 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: 'Epilogue', sans-serif;
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 18px;
+  color: #17243a;
+  background: #f3ede7;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.home nav.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.home nav.navigation h1.brand {
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+div.home nav.navigation a.request-beta {
+  font-size: 14px;
+  display: inline-block;
+  padding: 1em;
+  font-weight: 700;
+  color: #17243a;
+  border: 1px solid #17243a;
+  border-radius: 5px;
+}
+
+div.home header.header-container {
+  padding: 1em;
+}
+
+div.home header.header-container div.top-container {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+div.home header.header-container div.top-container section.action-container {
+  padding: 1em 0;
+}
+
+div.home header.header-container div.top-container section.action-container div.path-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+}
+
+div.home header.header-container div.top-container section.action-container h1.header-text {
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+div.home header.header-container div.top-container section.action-container p.description-text {
+  font-size: 16px;
+  margin-bottom: 1em;
+  line-height: 28px;
+  color: #49576e;
+}
+
+div.home header.header-container div.top-container section.action-container a.request-beta {
+  padding: 1em 2em;
+  border-radius: 5px;
+  display: inline-block;
+  background: #17243a;
+  color: #faf7f5;
+}
+
+div.home header.header-container div.top-container section.image-container {
+  padding: 1em 0;
+}
+
+div.home header.header-container section.reviews-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em 0;
+  padding-bottom: 180px;
+}
+
+div.home header.header-container section.reviews-container div.review {
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+div.home header.header-container section.reviews-container div.review h1 {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+div.home header.header-container section.reviews-container div.review h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #49576e;
+}
+
+div.home div.cmo-speaks div.wrapper {
+  padding: 2.5em 0;
+  background: #17243a;
+  color: #faf7f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+}
+
+div.home div.cmo-speaks div.wrapper div.cmo-container {
+  position: relative;
+  margin-top: -220px;
+  margin-bottom: 2em;
+}
+
+div.home div.cmo-speaks div.wrapper div.words-container {
+  text-align: center;
+}
+
+div.home div.cmo-speaks div.wrapper div.words-container h1 {
+  font-weight: 400;
+  margin-bottom: 1.5em;
+}
+
+div.home div.cmo-speaks div.wrapper div.words-container p.subtitle {
+  padding: 0 1em;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 1.5em;
+  letter-spacing: 0.09px;
+}
+
+div.home div.cmo-speaks div.wrapper div.words-container div.name-position .name {
+  text-transform: uppercase;
+  line-height: 32px;
+}
+
+div.home div.cmo-speaks div.wrapper div.words-container div.name-position .sub {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+div.home div.cmo-speaks div.wrapper div.path-container {
+  margin-bottom: 2em;
+}
+
+div.home footer.footer {
+  padding: 2em 0;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.home footer.footer div.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 150px;
+}
+/*# sourceMappingURL=style.css.map */

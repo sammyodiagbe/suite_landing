@@ -1,0 +1,210 @@
+$dark_blue: hsl(219,43,16);
+$lighterdark: hsl(218,20,36);
+$greyish_background: hsl(30,33,93);
+$smokewhite: hsl(30,29,97);
+$purpuish: hsl(264, 100, 69);
+$funchia: hsl(292, 76, 54);
+$orangeL: hsl(31, 100, 65);
+$button-border-radius: 6px;
+$mobile-font-size: 16px;
+$default-padding: 1em;
+$strong-weight: 700;
+$light-weight: 300;
+$default-radius: 5px;
+$light-weight-2:400;
+$mobile-large-font: 38px;
+$mobile-line-space: 48px;
+$border-radius: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Epilogue', sans-serif;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    color: $dark_blue;
+    background: $greyish_background;
+}
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.home {
+    nav.navigation {
+        display: flex;
+        align-items: center;
+        padding: $default-padding;
+
+        justify-content: space-between;
+
+        h1.brand {
+            font-weight: bold;
+            font-weight: 700;
+            font-size: 32px;
+        }
+
+        a.request-beta {
+            font-size: 14px;
+            display: inline-block;
+            padding: $default-padding;
+            font-weight: 700;
+            color: $dark_blue;
+            border: 1px solid $dark_blue;
+            border-radius: $default-radius;
+        }
+    }
+
+
+    // header
+
+    header.header-container {
+        padding: $default-padding;
+        div.top-container {
+            padding-top: $default-padding;
+            padding-bottom: $default-padding;
+            section.action-container {
+                padding: $default-padding 0;
+                div.path-container {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: $default-padding;
+                }
+
+                h1.header-text {
+                    font-size: 38px;
+                    line-height: 44px;
+                    font-weight: 400;
+                    margin-bottom: $default-padding;
+                }
+
+                p.description-text {
+                    font-size: 16px;
+                    margin-bottom: $default-padding;
+                    line-height: 28px;
+                    color: $lighterdark;
+
+
+                }
+
+                a.request-beta {
+                    padding: $default-padding 2em;
+                    border-radius: $default-radius;
+
+                    display: inline-block;
+                    background: $dark_blue;
+                    color: $smokewhite;
+                }
+            }
+
+            // phone container 
+            section.image-container {
+                padding: $default-padding 0;
+            }
+
+            // reviews container 
+            
+        }
+        section.reviews-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: $default-padding 0;
+            padding-bottom: 180px;
+            div.review {
+                padding: 1.5em 0;
+            
+                text-align: center;
+                h1 {
+                    font-size: 48px;
+                    line-height: 56px;
+                }
+                h5 {
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    letter-spacing: 2.5px;
+                    color: $lighterdark;
+                }
+            }
+        }
+    }
+
+
+    div.cmo-speaks {
+        
+        div.wrapper {
+            padding: 2.5em 0;
+            background: $dark_blue;
+            color: $smokewhite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: $border-radius;
+            div.cmo-container {
+                position: relative;
+                margin-top: -220px;
+                margin-bottom: 2em;
+            }
+            div.words-container {
+                text-align: center;
+                h1 {
+                    font-weight: 400;
+                    margin-bottom: 1.5em;
+                }
+
+                p.subtitle {
+                    padding: 0 1em;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 32px;
+                    margin-bottom: 1.5em;
+                    letter-spacing: 0.09px;
+                }
+
+                div.name-position {
+                    .name {
+                        text-transform: uppercase;
+                        line-height: 32px;
+                    }
+                    .sub {
+                        font-size: 16px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        letter-spacing: 2.5px;
+                    }
+                }
+            }
+
+            div.path-container {
+                margin-bottom: 2em;
+            }
+        }
+    }
+
+    footer.footer {
+        padding: 2em 0;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        div.socials {
+            display: flex;
+            justify-content: space-around;
+            width: 150px;
+        }
+    }
+}
