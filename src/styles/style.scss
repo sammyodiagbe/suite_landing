@@ -120,6 +120,9 @@ div.home {
             // phone container 
             section.image-container {
                 padding: $default-padding 0;
+                img.phone-image  {
+                    width: 100%;
+                }
             }
 
             // reviews container 
