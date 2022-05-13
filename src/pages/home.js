@@ -1,4 +1,5 @@
 import phoneImage from "../assets/mobile_image.svg";
+import ipadImage from "../assets/ipag_phone.svg";
 import pathImage from "../assets/path_image.svg";
 import manImage from "../assets/man_image.svg";
 import facebook from "../assets/facebook_social.svg";
@@ -17,25 +18,26 @@ const Home = () => {
         </a>
       </nav>
       <header className="header-container">
-        <section class="action-container">
-          <div className="arrow-container">
-            <img src={pt_1} alt="arrow path" className="ar-path-1" />
-          </div>
+        <div className="top-container">
+          <section class="action-container">
+            <h1 className="header-text">
+              A <b>super solution</b> for your <b>business.</b>{" "}
+            </h1>
+            <p className="description-text">
+              Our marketing and sales automation help you scale your outreach to
+              get more deals for your company.
+            </p>
+            <a href="#request-beta" className="request-beta">
+              Request Beta Access
+            </a>
+          </section>
+          <section className="image-container">
+            <img src={phoneImage} alt="Mobile app" className="phone-image" />
 
-          <h1 className="header-text">
-            A <b>super solution</b> for your <b>business.</b>{" "}
-          </h1>
-          <p className="description-text">
-            Our marketing and sales automation help you scale your outreach to
-            get more deals for your company.
-          </p>
-          <a href="#request-beta" className="request-beta">
-            Request Beta Access
-          </a>
-        </section>
-        <section className="image-container">
-          <img src={phoneImage} alt="Mobile app" className="phone-image" />
-        </section>
+            <img src={ipadImage} alt="ipad phone" className="ipad-image" />
+          </section>
+        </div>
+
         <section className="reviews-container">
           <div className="review">
             <h1 className="review-title">2K+</h1>
@@ -52,8 +54,13 @@ const Home = () => {
         </section>
       </header>
       <div className="cmo-speaks">
-        <img src={manImage} alt="CMO speaks" className="cmo" />
-        <img src={pathImage} alt="Path arrow" className="arrow" />
+        <div className="cmo-container">
+          <img src={manImage} alt="CMO speaks" className="cmo" />
+        </div>
+        <div className="path-container">
+          <img src={pathImage} alt="Path arrow" className="arrow" />
+        </div>
+
         <div className="words-container">
           <h1 className="header-title">
             It just <b>works.</b>
