@@ -1,5 +1,4 @@
 import phoneImage from "../assets/mobile_image.svg";
-import ipadImage from "../assets/ipag_phone.svg";
 import pathImage from "../assets/path_image.svg";
 import manImage from "../assets/man_image.svg";
 import facebook from "../assets/facebook_social.svg";
@@ -7,8 +6,6 @@ import instagram from "../assets/instagram_social.svg";
 import twitter from "../assets/twitter_social.svg";
 import pt_1 from "../assets/pt_1.svg";
 const Home = () => {
-  const dateYear = new Date().getFullYear();
-
   return (
     <div className="home">
       {/* navigation */}
